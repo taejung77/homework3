@@ -4,7 +4,7 @@
 void main()
 {
     int list[5]; 
-    // 크기가 5인 정수형 배열 선언
+    // 크기가 5인 정수형 배열 선언.
     int *plist[5] = {NULL,};
     //크기가 5인 포인터 배열 선언 후 null로 초기화.
     plist[0] = (int *)malloc(sizeof(int));
@@ -34,6 +34,6 @@ void main()
     printf("plist[2] = %p\n", plist[2]); // 세 번째 포인터가 가리키는 메모리의 주소 출력 (NULL)
     printf("plist[3] = %p\n", plist[3]); // 네 번째 포인터가 가리키는 메모리의 주소 출력 (NULL)
     printf("plist[4] = %p\n", plist[4]); // 다섯 번째 포인터가 가리키는 메모리의 주소 출력 (NULL)
-    printf("[----- [이태정] [2023041062] -----]");
+    printf("[---- [이태정] [2023041062] ----]");
     free(plist[0]); // 동적으로 할당된 메모리 해제
 } 
